@@ -30,3 +30,16 @@ graph TD
 - Resolved Kubernetes ephemeral storage constraints and DNS resolution limits in isolated Airflow workers.
 - Implemented secure IAM role and credential passing via Kubernetes Secrets (`V1SecretVolumeSource`).
 - Automated table schema evolution in BigQuery with `ALLOW_FIELD_ADDITION`.
+
+
+## 📊 Pipeline Results
+
+
+### 1. Airflow DAG Execution (KubernetesPodOperator)
+<img width="1902" height="912" alt="obraz" src="https://github.com/user-attachments/assets/fdd5038e-81f3-461c-8b57-42ff048bddcb" />
+
+
+### 2. BigQuery Data Warehouse Table
+<img width="1910" height="798" alt="obraz" src="https://github.com/user-attachments/assets/c2fe23fc-c589-4582-803d-d7ba28dd4a29" />
+
+
