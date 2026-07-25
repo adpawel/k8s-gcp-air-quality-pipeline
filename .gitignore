@@ -1,0 +1,12 @@
+*.json
+key.json
+gcp-credentials/
+.env
+
+__pycache__/
+*.pyc
+.venv/
+
+.terraform/
+*.tfstate
+*.tfstate.backup
