@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: mart_air_quality_report
+    description: "Analityczna tabela jakości powietrza ze statusami"
+    columns:
+      - name: measurement_timestamp
+        description: "Dokładny czas pomiaru smogu"
+        tests:
+          - not_null
+          - unique
+          
+      - name: city
+        description: "Nazwa miasta"
+        tests:
+          - not_null
+          
+      - name: air_quality_status
+        description: "Kategoryzacja stanu powietrza"
+        tests:
+          - not_null
+          - accepted_values:
+              values: 
+                - 'Bardzo dobra'
+                - 'Dobra'
+                - 'Umiarkowana'
+                - 'Zła'
+                - 'Bardzo zła'

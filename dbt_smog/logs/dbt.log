@@ -369,3 +369,764 @@ order by measurement_timestamp desc
 [0m18:20:31.014239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001398441C070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013984EA3070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013997EDF520>]}
 [0m18:20:31.015238 [debug] [MainThread]: Flushing usage events
 [0m18:20:31.584651 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:26:28.818768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128F6298040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128F8847760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128F757F5E0>]}
+
+
+============================== 18:26:28.830627 | 94a9a005-d4f1-4932-bc0c-872aef7f5fa0 ==============================
+[0m18:26:28.830627 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:26:28.832629 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt run --profiles-dir .', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m18:26:31.417106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128F757F5E0>]}
+[0m18:26:31.516531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128FFAD9510>]}
+[0m18:26:31.517533 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:26:32.137295 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m18:26:32.500829 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m18:26:32.500829 [debug] [MainThread]: Partial parsing: added file: smog_dbt://models\schema.yml
+[0m18:26:32.501829 [debug] [MainThread]: Partial parsing: updated file: smog_dbt://models\mart_air_quality_report.sql
+[0m18:26:33.343457 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'mart_air_quality_report' in package 'smog_dbt' (models\schema.yml). Arguments
+to generic tests should be nested under the `arguments` property.
+[0m18:26:33.344469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001288B6A3790>]}
+[0m18:26:33.475986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001288B59FBB0>]}
+[0m18:26:33.665433 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:26:33.670616 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:26:33.716066 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:26:33.736204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001288B79D990>]}
+[0m18:26:33.737205 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 561 macros
+[0m18:26:33.738201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001288B350C40>]}
+[0m18:26:33.740204 [info ] [MainThread]: 
+[0m18:26:33.741291 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:26:33.742290 [info ] [MainThread]: 
+[0m18:26:33.743289 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:26:33.746288 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509'
+[0m18:26:33.747288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:26:35.532609 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m18:26:35.534637 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:26:36.017297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001288B352530>]}
+[0m18:26:36.017297 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:26:36.028321 [debug] [Thread-1 (]: Began running node model.smog_dbt.mart_air_quality_report
+[0m18:26:36.029319 [info ] [Thread-1 (]: 1 of 1 START sql table model smog_warehouse.mart_air_quality_report ............ [RUN]
+[0m18:26:36.030318 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.smog_dbt.mart_air_quality_report'
+[0m18:26:36.031320 [debug] [Thread-1 (]: Began compiling node model.smog_dbt.mart_air_quality_report
+[0m18:26:36.038343 [debug] [Thread-1 (]: Writing injected SQL for node "model.smog_dbt.mart_air_quality_report"
+[0m18:26:36.040345 [debug] [Thread-1 (]: Began executing node model.smog_dbt.mart_air_quality_report
+[0m18:26:36.055345 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:26:36.440157 [debug] [Thread-1 (]: Writing runtime sql for node "model.smog_dbt.mart_air_quality_report"
+[0m18:26:36.441175 [debug] [Thread-1 (]: On model.smog_dbt.mart_air_quality_report: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "model.smog_dbt.mart_air_quality_report"} */
+
+  
+    
+
+    create or replace table `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with source as (
+    select * from `de-project-001-503509`.`smog_warehouse`.`krakow_air_quality`
+),
+
+transformed as (
+    select
+        timestamp(timestamp) as measurement_timestamp,
+        format_timestamp('%Y-%m-%d %H:%M', timestamp(timestamp)) as formatted_time,
+        city,
+        pm10,
+        pm2_5,
+        european_aqi,
+        case 
+            when european_aqi <= 20 then 'Bardzo dobra'
+            when european_aqi <= 40 then 'Dobra'
+            when european_aqi <= 60 then 'Umiarkowana'
+            when european_aqi <= 80 then 'Zla'
+            else 'Bardzo zla'
+        end as air_quality_status,
+        source_file,
+        current_timestamp() as dbt_updated_at
+    from source
+)
+
+select * from transformed
+order by measurement_timestamp desc
+    );
+  
+[0m18:26:36.852034 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:56d7e122-6410-4e84-8350-717d56420f79&page=queryresults
+[0m18:26:37.802056 [debug] [Thread-1 (]: SQL status: OK in 0.949 seconds
+[0m18:26:38.119742 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '94a9a005-d4f1-4932-bc0c-872aef7f5fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128FFAFE680>]}
+[0m18:26:38.120746 [info ] [Thread-1 (]: 1 of 1 OK created sql table model smog_warehouse.mart_air_quality_report ....... [[32mCREATE TABLE (13.0 rows, 1.1 KiB processed)[0m in 2.09s]
+[0m18:26:38.121746 [debug] [Thread-1 (]: Finished running node model.smog_dbt.mart_air_quality_report
+[0m18:26:38.124271 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:26:38.126269 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:26:38.126269 [debug] [MainThread]: Connection 'list_de-project-001-503509' was properly closed.
+[0m18:26:38.127270 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m18:26:38.127270 [debug] [MainThread]: Connection 'model.smog_dbt.mart_air_quality_report' was properly closed.
+[0m18:26:38.128270 [info ] [MainThread]: 
+[0m18:26:38.129266 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.39 seconds (4.39s).
+[0m18:26:38.130773 [debug] [MainThread]: Command end result
+[0m18:26:38.181265 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:26:38.185266 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:26:38.189273 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:26:38.197273 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m18:26:38.198274 [info ] [MainThread]: 
+[0m18:26:38.199276 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:26:38.199276 [info ] [MainThread]: 
+[0m18:26:38.200275 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m18:26:38.201276 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:26:38.202928 [debug] [MainThread]: Command `dbt run` succeeded at 18:26:38.202928 after 9.52 seconds
+[0m18:26:38.203936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128F6298040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128F7516B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000128FFAD9510>]}
+[0m18:26:38.203936 [debug] [MainThread]: Flushing usage events
+[0m18:26:38.696481 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:27:17.843810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028193297FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028194ABA140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028194AB9F60>]}
+
+
+============================== 18:27:17.850462 | a89624ff-0cb0-43fd-bf7e-0ba94ae6568b ==============================
+[0m18:27:17.850462 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:27:17.851462 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --profiles-dir .', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m18:27:20.134073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a89624ff-0cb0-43fd-bf7e-0ba94ae6568b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028194AB9F90>]}
+[0m18:27:20.230520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a89624ff-0cb0-43fd-bf7e-0ba94ae6568b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028194947190>]}
+[0m18:27:20.231522 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:27:20.727347 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m18:27:21.003750 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:27:21.004255 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:27:21.004255 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:27:21.015261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a89624ff-0cb0-43fd-bf7e-0ba94ae6568b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281A7490130>]}
+[0m18:27:21.229372 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:27:21.232744 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:27:21.354521 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:27:21.383214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a89624ff-0cb0-43fd-bf7e-0ba94ae6568b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281A6CA9270>]}
+[0m18:27:21.384215 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 561 macros
+[0m18:27:21.386219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a89624ff-0cb0-43fd-bf7e-0ba94ae6568b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281947DACE0>]}
+[0m18:27:21.388217 [info ] [MainThread]: 
+[0m18:27:21.389219 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:27:21.390213 [info ] [MainThread]: 
+[0m18:27:21.391249 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:27:21.392249 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m18:27:21.393252 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:27:23.613895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a89624ff-0cb0-43fd-bf7e-0ba94ae6568b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281947695A0>]}
+[0m18:27:23.614861 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:27:23.623668 [debug] [Thread-1 (]: Began running node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:27:23.624662 [debug] [Thread-2 (]: Began running node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:27:23.624662 [debug] [Thread-3 (]: Began running node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:27:23.625687 [debug] [Thread-4 (]: Began running node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:27:23.626657 [info ] [Thread-1 (]: 1 of 5 START test accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a  [RUN]
+[0m18:27:23.626657 [info ] [Thread-2 (]: 2 of 5 START test not_null_mart_air_quality_report_air_quality_status .......... [RUN]
+[0m18:27:23.627657 [info ] [Thread-3 (]: 3 of 5 START test not_null_mart_air_quality_report_city ........................ [RUN]
+[0m18:27:23.628657 [info ] [Thread-4 (]: 4 of 5 START test not_null_mart_air_quality_report_measurement_timestamp ....... [RUN]
+[0m18:27:23.629657 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12'
+[0m18:27:23.630660 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe'
+[0m18:27:23.630660 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28'
+[0m18:27:23.632662 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d'
+[0m18:27:23.633659 [debug] [Thread-1 (]: Began compiling node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:27:23.634666 [debug] [Thread-2 (]: Began compiling node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:27:23.635658 [debug] [Thread-3 (]: Began compiling node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:27:23.635658 [debug] [Thread-4 (]: Began compiling node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:27:23.684215 [debug] [Thread-1 (]: Writing injected SQL for node "test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12"
+[0m18:27:23.695256 [debug] [Thread-2 (]: Writing injected SQL for node "test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe"
+[0m18:27:23.702917 [debug] [Thread-3 (]: Writing injected SQL for node "test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28"
+[0m18:27:23.709918 [debug] [Thread-4 (]: Writing injected SQL for node "test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d"
+[0m18:27:23.712425 [debug] [Thread-1 (]: Began executing node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:27:23.713440 [debug] [Thread-2 (]: Began executing node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:27:23.713440 [debug] [Thread-4 (]: Began executing node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:27:23.714432 [debug] [Thread-3 (]: Began executing node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:27:23.739433 [debug] [Thread-1 (]: Writing runtime sql for node "test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12"
+[0m18:27:23.741518 [debug] [Thread-2 (]: Writing runtime sql for node "test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe"
+[0m18:27:23.743517 [debug] [Thread-4 (]: Writing runtime sql for node "test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d"
+[0m18:27:23.745517 [debug] [Thread-3 (]: Writing runtime sql for node "test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28"
+[0m18:27:23.747482 [debug] [Thread-2 (]: On test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select air_quality_status
+from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+where air_quality_status is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:27:23.748486 [debug] [Thread-1 (]: On test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        air_quality_status as value_field,
+        count(*) as n_records
+
+    from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+    group by air_quality_status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Bardzo dobra','Dobra','Umiarkowana','Zła','Bardzo zła'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:27:23.749520 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:27:23.750482 [debug] [Thread-4 (]: On test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select measurement_timestamp
+from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+where measurement_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:27:23.750482 [debug] [Thread-3 (]: On test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select city
+from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+where city is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:27:23.751525 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:27:23.754518 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:27:23.756025 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:27:24.466825 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:d9eca831-a1dd-4f86-83d7-88fa96bfafe4&page=queryresults
+[0m18:27:24.473058 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:a35fa632-e0f0-4e1b-87bf-4f09ab982e40&page=queryresults
+[0m18:27:24.497830 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:dbea4d3b-0866-4cd1-b2e6-0dd967568f23&page=queryresults
+[0m18:27:24.630771 [debug] [Thread-2 (]: SQL status: OK in 0.163 seconds
+[0m18:27:24.683035 [debug] [Thread-1 (]: SQL status: OK in 0.184 seconds
+[0m18:27:24.704774 [debug] [Thread-4 (]: SQL status: OK in 0.231 seconds
+[0m18:27:24.996943 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:24908b0f-10a0-4df3-87aa-6ec36f613c87&page=queryresults
+[0m18:27:25.064692 [info ] [Thread-4 (]: 4 of 5 PASS not_null_mart_air_quality_report_measurement_timestamp ............. [[32mPASS[0m in 1.43s]
+[0m18:27:25.069256 [debug] [Thread-4 (]: Finished running node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:27:25.068248 [info ] [Thread-1 (]: 1 of 5 PASS accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a  [[32mPASS[0m in 1.44s]
+[0m18:27:25.070255 [debug] [Thread-4 (]: Began running node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:27:25.071256 [debug] [Thread-1 (]: Finished running node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:27:25.071256 [info ] [Thread-4 (]: 5 of 5 START test unique_mart_air_quality_report_measurement_timestamp ......... [RUN]
+[0m18:27:25.072255 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d, now test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49)
+[0m18:27:25.073260 [debug] [Thread-4 (]: Began compiling node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:27:25.083329 [debug] [Thread-4 (]: Writing injected SQL for node "test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49"
+[0m18:27:25.085986 [debug] [Thread-4 (]: Began executing node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:27:25.088037 [debug] [Thread-4 (]: Writing runtime sql for node "test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49"
+[0m18:27:25.091036 [info ] [Thread-2 (]: 2 of 5 PASS not_null_mart_air_quality_report_air_quality_status ................ [[32mPASS[0m in 1.46s]
+[0m18:27:25.093228 [debug] [Thread-2 (]: Finished running node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:27:25.093228 [debug] [Thread-4 (]: On test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select measurement_timestamp as unique_field
+  from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+  where measurement_timestamp is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:27:25.094232 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:27:25.112852 [debug] [Thread-3 (]: SQL status: OK in 0.115 seconds
+[0m18:27:25.359319 [info ] [Thread-3 (]: 3 of 5 PASS not_null_mart_air_quality_report_city .............................. [[32mPASS[0m in 1.73s]
+[0m18:27:25.361297 [debug] [Thread-3 (]: Finished running node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:27:25.554952 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:088d0542-0b03-4360-ad5b-762553a95ed5&page=queryresults
+[0m18:27:25.683750 [debug] [Thread-4 (]: SQL status: OK in 0.126 seconds
+[0m18:27:25.949990 [error] [Thread-4 (]: 5 of 5 FAIL 3 unique_mart_air_quality_report_measurement_timestamp ............. [[31mFAIL 3[0m in 0.88s]
+[0m18:27:25.951961 [debug] [Thread-4 (]: Finished running node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:27:25.954046 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:27:25.956049 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:27:25.956049 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m18:27:25.957048 [debug] [MainThread]: Connection 'test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12' was properly closed.
+[0m18:27:25.957639 [debug] [MainThread]: Connection 'test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe' was properly closed.
+[0m18:27:25.957639 [debug] [MainThread]: Connection 'test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28' was properly closed.
+[0m18:27:25.958649 [debug] [MainThread]: Connection 'test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49' was properly closed.
+[0m18:27:25.958649 [info ] [MainThread]: 
+[0m18:27:25.959652 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 4.57 seconds (4.57s).
+[0m18:27:25.961647 [debug] [MainThread]: Command end result
+[0m18:27:26.013304 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:27:26.016930 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:27:26.020980 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:27:26.032152 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m18:27:26.033160 [info ] [MainThread]: 
+[0m18:27:26.034154 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:27:26.036161 [info ] [MainThread]: 
+[0m18:27:26.037155 [error] [MainThread]: [[31mERROR[0m]: in test unique_mart_air_quality_report_measurement_timestamp (models\schema.yml)
+[0m18:27:26.039158 [error] [MainThread]:   Got 3 results, configured to fail if != 0
+[0m18:27:26.040673 [info ] [MainThread]: 
+[0m18:27:26.040673 [info ] [MainThread]:   compiled code at target\compiled\smog_dbt\models\schema.yml\unique_mart_air_quality_report_measurement_timestamp.sql
+[0m18:27:26.042203 [info ] [MainThread]: 
+[0m18:27:26.043214 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m18:27:26.044214 [debug] [MainThread]: Command `dbt test` failed at 18:27:26.044214 after 8.34 seconds
+[0m18:27:26.045214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028193297FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028191AFEA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028193E4B0D0>]}
+[0m18:27:26.045214 [debug] [MainThread]: Flushing usage events
+[0m18:27:26.656697 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:29:18.875536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020329BC7FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B2778B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B277910>]}
+
+
+============================== 18:29:18.882744 | 1fb07b60-3bb7-475a-a192-e1e0a655aaaf ==============================
+[0m18:29:18.882744 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:29:18.883821 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m18:29:21.228155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B277C40>]}
+[0m18:29:21.309149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033C1FEB30>]}
+[0m18:29:21.310154 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:29:21.787103 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m18:29:22.044682 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:29:22.045689 [debug] [MainThread]: Partial parsing: updated file: smog_dbt://models\mart_air_quality_report.sql
+[0m18:29:22.749578 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'mart_air_quality_report' in package 'smog_dbt' (models\schema.yml). Arguments
+to generic tests should be nested under the `arguments` property.
+[0m18:29:22.751588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033DE19B10>]}
+[0m18:29:22.899162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033DEF0550>]}
+[0m18:29:23.068351 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:29:23.075038 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:29:23.121296 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:29:23.138835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033E1BEFB0>]}
+[0m18:29:23.139835 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 561 macros
+[0m18:29:23.140868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033E1BEF50>]}
+[0m18:29:23.142379 [info ] [MainThread]: 
+[0m18:29:23.143391 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:29:23.144423 [info ] [MainThread]: 
+[0m18:29:23.144423 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:29:23.146718 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509'
+[0m18:29:23.147749 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:29:25.008706 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m18:29:25.008706 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:29:25.447531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033E1BC490>]}
+[0m18:29:25.447531 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:29:25.464823 [debug] [Thread-1 (]: Began running node model.smog_dbt.mart_air_quality_report
+[0m18:29:25.466838 [info ] [Thread-1 (]: 1 of 1 START sql table model smog_warehouse.mart_air_quality_report ............ [RUN]
+[0m18:29:25.471583 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.smog_dbt.mart_air_quality_report'
+[0m18:29:25.473380 [debug] [Thread-1 (]: Began compiling node model.smog_dbt.mart_air_quality_report
+[0m18:29:25.485745 [debug] [Thread-1 (]: Writing injected SQL for node "model.smog_dbt.mart_air_quality_report"
+[0m18:29:25.489850 [debug] [Thread-1 (]: Began executing node model.smog_dbt.mart_air_quality_report
+[0m18:29:25.506388 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:29:25.842388 [debug] [Thread-1 (]: Writing runtime sql for node "model.smog_dbt.mart_air_quality_report"
+[0m18:29:25.844140 [debug] [Thread-1 (]: On model.smog_dbt.mart_air_quality_report: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "model.smog_dbt.mart_air_quality_report"} */
+
+  
+    
+
+    create or replace table `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with source as (
+    select * from `de-project-001-503509`.`smog_warehouse`.`krakow_air_quality`
+    qualify row_number() over (partition by timestamp order by source_file desc) = 1
+),
+
+transformed as (
+    select
+        timestamp(timestamp) as measurement_timestamp,
+        format_timestamp('%Y-%m-%d %H:%M', timestamp(timestamp)) as formatted_time,
+        city,
+        pm10,
+        pm2_5,
+        european_aqi,
+        case 
+            when european_aqi <= 20 then 'Bardzo dobra'
+            when european_aqi <= 40 then 'Dobra'
+            when european_aqi <= 60 then 'Umiarkowana'
+            when european_aqi <= 80 then 'Zla'
+            else 'Bardzo zla'
+        end as air_quality_status,
+        source_file,
+        current_timestamp() as dbt_updated_at
+    from source
+)
+
+select * from transformed
+order by measurement_timestamp desc
+    );
+  
+[0m18:29:26.170317 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:174db723-c97c-45d9-b545-af62b95f3d8d&page=queryresults
+[0m18:29:27.032092 [debug] [Thread-1 (]: SQL status: OK in 0.862 seconds
+[0m18:29:27.295829 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1fb07b60-3bb7-475a-a192-e1e0a655aaaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033DD6BD60>]}
+[0m18:29:27.297862 [info ] [Thread-1 (]: 1 of 1 OK created sql table model smog_warehouse.mart_air_quality_report ....... [[32mCREATE TABLE (9.0 rows, 1.1 KiB processed)[0m in 1.82s]
+[0m18:29:27.299886 [debug] [Thread-1 (]: Finished running node model.smog_dbt.mart_air_quality_report
+[0m18:29:27.299886 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:29:27.299886 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:29:27.303322 [debug] [MainThread]: Connection 'list_de-project-001-503509' was properly closed.
+[0m18:29:27.303322 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m18:29:27.304328 [debug] [MainThread]: Connection 'model.smog_dbt.mart_air_quality_report' was properly closed.
+[0m18:29:27.304328 [info ] [MainThread]: 
+[0m18:29:27.304328 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.16 seconds (4.16s).
+[0m18:29:27.306836 [debug] [MainThread]: Command end result
+[0m18:29:27.362931 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:29:27.366177 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:29:27.367215 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:29:27.378704 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m18:29:27.378704 [info ] [MainThread]: 
+[0m18:29:27.379712 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:29:27.379712 [info ] [MainThread]: 
+[0m18:29:27.379712 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m18:29:27.381759 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:29:27.382810 [debug] [MainThread]: Command `dbt run` succeeded at 18:29:27.382810 after 8.65 seconds
+[0m18:29:27.382810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020329BC7FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033E0CBF70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002033E1BD4E0>]}
+[0m18:29:27.382810 [debug] [MainThread]: Flushing usage events
+[0m18:29:27.927477 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:29:32.860862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204CF66C0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204D1D5A1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204D1D59FC0>]}
+
+
+============================== 18:29:32.865171 | 4da0ffc5-e9ee-44af-a4b1-092128c455ae ==============================
+[0m18:29:32.865171 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:29:32.865171 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --profiles-dir .', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m18:29:34.423417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4da0ffc5-e9ee-44af-a4b1-092128c455ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E3F4B5B0>]}
+[0m18:29:34.515140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4da0ffc5-e9ee-44af-a4b1-092128c455ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204D1CCEC20>]}
+[0m18:29:34.519555 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:29:35.028888 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m18:29:35.271747 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:29:35.271747 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:29:35.271747 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:29:35.282691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4da0ffc5-e9ee-44af-a4b1-092128c455ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E4730130>]}
+[0m18:29:35.495284 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:29:35.498613 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:29:35.599808 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:29:35.622932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4da0ffc5-e9ee-44af-a4b1-092128c455ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E2F39180>]}
+[0m18:29:35.622932 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 561 macros
+[0m18:29:35.622932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4da0ffc5-e9ee-44af-a4b1-092128c455ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E288EC20>]}
+[0m18:29:35.626259 [info ] [MainThread]: 
+[0m18:29:35.626259 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:29:35.626259 [info ] [MainThread]: 
+[0m18:29:35.629591 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:29:35.630596 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m18:29:35.630596 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:29:37.131663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4da0ffc5-e9ee-44af-a4b1-092128c455ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204D1077340>]}
+[0m18:29:37.133225 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:29:37.139471 [debug] [Thread-1 (]: Began running node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:29:37.139471 [debug] [Thread-2 (]: Began running node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:29:37.141990 [debug] [Thread-3 (]: Began running node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:29:37.141990 [debug] [Thread-4 (]: Began running node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:29:37.141990 [info ] [Thread-1 (]: 1 of 5 START test accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a  [RUN]
+[0m18:29:37.144512 [info ] [Thread-2 (]: 2 of 5 START test not_null_mart_air_quality_report_air_quality_status .......... [RUN]
+[0m18:29:37.146262 [info ] [Thread-3 (]: 3 of 5 START test not_null_mart_air_quality_report_city ........................ [RUN]
+[0m18:29:37.146262 [info ] [Thread-4 (]: 4 of 5 START test not_null_mart_air_quality_report_measurement_timestamp ....... [RUN]
+[0m18:29:37.146262 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12'
+[0m18:29:37.146262 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe'
+[0m18:29:37.146262 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28'
+[0m18:29:37.150938 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d'
+[0m18:29:37.150938 [debug] [Thread-1 (]: Began compiling node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:29:37.150938 [debug] [Thread-2 (]: Began compiling node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:29:37.150938 [debug] [Thread-3 (]: Began compiling node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:29:37.150938 [debug] [Thread-4 (]: Began compiling node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:29:37.195512 [debug] [Thread-1 (]: Writing injected SQL for node "test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12"
+[0m18:29:37.207767 [debug] [Thread-2 (]: Writing injected SQL for node "test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe"
+[0m18:29:37.215824 [debug] [Thread-3 (]: Writing injected SQL for node "test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28"
+[0m18:29:37.223176 [debug] [Thread-4 (]: Writing injected SQL for node "test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d"
+[0m18:29:37.224591 [debug] [Thread-1 (]: Began executing node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:29:37.224591 [debug] [Thread-2 (]: Began executing node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:29:37.248155 [debug] [Thread-4 (]: Began executing node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:29:37.248155 [debug] [Thread-3 (]: Began executing node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:29:37.248155 [debug] [Thread-1 (]: Writing runtime sql for node "test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12"
+[0m18:29:37.252584 [debug] [Thread-2 (]: Writing runtime sql for node "test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe"
+[0m18:29:37.254592 [debug] [Thread-4 (]: Writing runtime sql for node "test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d"
+[0m18:29:37.256599 [debug] [Thread-3 (]: Writing runtime sql for node "test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28"
+[0m18:29:37.259612 [debug] [Thread-1 (]: On test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        air_quality_status as value_field,
+        count(*) as n_records
+
+    from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+    group by air_quality_status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Bardzo dobra','Dobra','Umiarkowana','Zła','Bardzo zła'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:29:37.260631 [debug] [Thread-2 (]: On test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select air_quality_status
+from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+where air_quality_status is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:29:37.260631 [debug] [Thread-4 (]: On test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select measurement_timestamp
+from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+where measurement_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:29:37.262645 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:29:37.262645 [debug] [Thread-3 (]: On test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select city
+from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+where city is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:29:37.264671 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:29:37.265382 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:29:37.269116 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:29:37.734982 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:7623ab0c-cba8-4015-88d7-78c5eb39ce05&page=queryresults
+[0m18:29:37.883461 [debug] [Thread-1 (]: SQL status: OK in 0.147 seconds
+[0m18:29:37.934807 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:9be43580-1941-46c3-804c-c690c06c81cd&page=queryresults
+[0m18:29:37.937357 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:0b4d59f1-8889-4715-a3b2-1e3756c33e3b&page=queryresults
+[0m18:29:37.938865 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:fc8e0b7c-dd3e-454c-9414-ebbdc42dcb1a&page=queryresults
+[0m18:29:38.066540 [debug] [Thread-3 (]: SQL status: OK in 0.126 seconds
+[0m18:29:38.071357 [debug] [Thread-4 (]: SQL status: OK in 0.132 seconds
+[0m18:29:38.146635 [debug] [Thread-2 (]: SQL status: OK in 0.209 seconds
+[0m18:29:38.290166 [info ] [Thread-1 (]: 1 of 5 PASS accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a  [[32mPASS[0m in 1.14s]
+[0m18:29:38.292681 [debug] [Thread-1 (]: Finished running node test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12
+[0m18:29:38.292681 [debug] [Thread-1 (]: Began running node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:29:38.295048 [info ] [Thread-1 (]: 5 of 5 START test unique_mart_air_quality_report_measurement_timestamp ......... [RUN]
+[0m18:29:38.295048 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.smog_dbt.accepted_values_mart_air_quality_report_air_quality_status__Bardzo_dobra__Dobra__Umiarkowana__Z_a__Bardzo_z_a.fca47b2e12, now test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49)
+[0m18:29:38.295048 [debug] [Thread-1 (]: Began compiling node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:29:38.311278 [debug] [Thread-1 (]: Writing injected SQL for node "test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49"
+[0m18:29:38.313796 [debug] [Thread-1 (]: Began executing node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:29:38.315547 [debug] [Thread-1 (]: Writing runtime sql for node "test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49"
+[0m18:29:38.315547 [debug] [Thread-1 (]: On test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select measurement_timestamp as unique_field
+  from `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+  where measurement_timestamp is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:29:38.315547 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:29:38.355957 [info ] [Thread-4 (]: 4 of 5 PASS not_null_mart_air_quality_report_measurement_timestamp ............. [[32mPASS[0m in 1.21s]
+[0m18:29:38.358525 [debug] [Thread-4 (]: Finished running node test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d
+[0m18:29:38.368225 [info ] [Thread-3 (]: 3 of 5 PASS not_null_mart_air_quality_report_city .............................. [[32mPASS[0m in 1.22s]
+[0m18:29:38.368225 [debug] [Thread-3 (]: Finished running node test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28
+[0m18:29:38.388589 [info ] [Thread-2 (]: 2 of 5 PASS not_null_mart_air_quality_report_air_quality_status ................ [[32mPASS[0m in 1.24s]
+[0m18:29:38.388589 [debug] [Thread-2 (]: Finished running node test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe
+[0m18:29:38.766072 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:d5807b53-263a-4e42-81fc-61352b35c489&page=queryresults
+[0m18:29:38.880782 [debug] [Thread-1 (]: SQL status: OK in 0.111 seconds
+[0m18:29:39.132256 [info ] [Thread-1 (]: 5 of 5 PASS unique_mart_air_quality_report_measurement_timestamp ............... [[32mPASS[0m in 0.84s]
+[0m18:29:39.133995 [debug] [Thread-1 (]: Finished running node test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49
+[0m18:29:39.133995 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:29:39.133995 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:29:39.133995 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m18:29:39.133995 [debug] [MainThread]: Connection 'test.smog_dbt.unique_mart_air_quality_report_measurement_timestamp.9326302c49' was properly closed.
+[0m18:29:39.138403 [debug] [MainThread]: Connection 'test.smog_dbt.not_null_mart_air_quality_report_air_quality_status.2dd545edbe' was properly closed.
+[0m18:29:39.138403 [debug] [MainThread]: Connection 'test.smog_dbt.not_null_mart_air_quality_report_city.8f036b8c28' was properly closed.
+[0m18:29:39.138403 [debug] [MainThread]: Connection 'test.smog_dbt.not_null_mart_air_quality_report_measurement_timestamp.f59e96d64d' was properly closed.
+[0m18:29:39.138403 [info ] [MainThread]: 
+[0m18:29:39.138403 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 3.51 seconds (3.51s).
+[0m18:29:39.142227 [debug] [MainThread]: Command end result
+[0m18:29:39.191534 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:29:39.195682 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:29:39.199698 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:29:39.216135 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m18:29:39.216135 [info ] [MainThread]: 
+[0m18:29:39.216135 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:29:39.220061 [info ] [MainThread]: 
+[0m18:29:39.220061 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m18:29:39.220061 [debug] [MainThread]: Command `dbt test` succeeded at 18:29:39.220061 after 6.50 seconds
+[0m18:29:39.224387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204CF66C0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204D1D5A920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E46CA260>]}
+[0m18:29:39.224387 [debug] [MainThread]: Flushing usage events
+[0m18:29:39.701514 [debug] [MainThread]: An error was encountered while trying to flush usage events

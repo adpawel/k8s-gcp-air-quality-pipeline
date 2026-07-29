@@ -1,5 +1,6 @@
 with source as (
     select * from {{ source('raw_data', 'krakow_air_quality') }}
+    qualify row_number() over (partition by timestamp order by source_file desc) = 1
 ),
 
 transformed as (
@@ -11,11 +12,11 @@ transformed as (
         pm2_5,
         european_aqi,
         case 
-            when european_aqi <= 20 then '🟢 Bardzo dobra'
-            when european_aqi <= 40 then '🟢 Dobra'
-            when european_aqi <= 60 then '🟡 Umiarkowana'
-            when european_aqi <= 80 then '🟠 Zła'
-            else '🔴 Bardzo zła'
+            when european_aqi <= 20 then 'Bardzo dobra'
+            when european_aqi <= 40 then 'Dobra'
+            when european_aqi <= 60 then 'Umiarkowana'
+            when european_aqi <= 80 then 'Zla'
+            else 'Bardzo zla'
         end as air_quality_status,
         source_file,
         current_timestamp() as dbt_updated_at
