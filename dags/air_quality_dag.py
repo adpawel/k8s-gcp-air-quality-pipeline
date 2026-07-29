@@ -1,4 +1,5 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
 from airflow import DAG
 from airflow.providers.cncf.kubernetes.operators.pod import KubernetesPodOperator
 from kubernetes.client import models as k8s
@@ -16,7 +17,7 @@ with DAG(
     default_args=default_args,
     description="Pobieranie ze smogu (GCS) -> ETL -> BigQuery",
     schedule="0 * * * *",
-    start_date=datetime(2026, 7, 25),
+    start_date=datetime(2026, 7, 25, tzinfo=timezone.utc),
     catchup=False,
 ) as dag:
 

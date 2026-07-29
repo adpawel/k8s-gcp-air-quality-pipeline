@@ -1,5 +1,6 @@
 import json
-from datetime import datetime
+from datetime import datetime, timezone
+
 from google.cloud import bigquery, storage
 
 PROJECT_ID = "de-project-001-503509"
@@ -27,7 +28,7 @@ def transform_and_load():
     current = data.get("current", {})
     row_to_insert = [
         {
-            "timestamp": current.get("time", datetime.now().isoformat()),
+            "timestamp": current.get("time", datetime.now(timezone.utc).isoformat()),
             "city": "Kraków",
             "european_aqi": current.get("european_aqi"),
             "pm10": current.get("pm10"),

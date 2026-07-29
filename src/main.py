@@ -1,5 +1,6 @@
 import json
-from datetime import datetime
+from datetime import datetime, timezone
+
 import requests
 from google.cloud import storage
 
@@ -34,7 +35,7 @@ if __name__ == "__main__":
     print("Fetching air quality data...")
     data = fetch_air_quality()
     
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
     blob_path = f"raw/year={now.year}/month={now.month:02d}/day={now.day:02d}/air_{now.strftime('%H%M%S')}.json"
     
     upload_to_gcs(BUCKET_NAME, data, blob_path)
