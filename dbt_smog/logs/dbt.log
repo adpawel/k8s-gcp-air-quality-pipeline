@@ -1,0 +1,371 @@
+[0m20:10:33.976911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D06CA7F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D09448B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D094489D0>]}
+
+
+============================== 20:10:33.982909 | 8039085a-fd57-413a-9c45-837690c98e4d ==============================
+[0m20:10:33.982909 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:10:33.983912 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --profiles-dir .', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m20:10:34.033688 [info ] [MainThread]: dbt version: 1.12.0
+[0m20:10:34.034692 [info ] [MainThread]: python version: 3.10.2
+[0m20:10:34.034692 [info ] [MainThread]: python path: C:\users\adpaw\projects\de\simple\.venv\Scripts\python.exe
+[0m20:10:34.035689 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m20:10:40.201476 [info ] [MainThread]: Using profiles dir at .
+[0m20:10:40.202582 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m20:10:40.203108 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\adpaw\projects\de\simple\dbt_smog\dbt_project.yml
+[0m20:10:40.204268 [info ] [MainThread]: adapter type: bigquery
+[0m20:10:40.204804 [info ] [MainThread]: adapter version: 1.12.0
+[0m20:10:40.334298 [info ] [MainThread]: Configuration:
+[0m20:10:40.336264 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:10:40.336264 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:10:40.337298 [info ] [MainThread]: Required dependencies:
+[0m20:10:40.338264 [debug] [MainThread]: Executing "git --help"
+[0m20:10:40.391488 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:10:40.392488 [debug] [MainThread]: STDERR: "b''"
+[0m20:10:40.393489 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:10:40.395029 [info ] [MainThread]: Connection:
+[0m20:10:40.395029 [info ] [MainThread]:   method: oauth
+[0m20:10:40.396070 [info ] [MainThread]:   database: de-project-001-503509
+[0m20:10:40.397068 [info ] [MainThread]:   execution_project: de-project-001-503509
+[0m20:10:40.397068 [info ] [MainThread]:   schema: smog_warehouse
+[0m20:10:40.398036 [info ] [MainThread]:   location: EUROPE-CENTRAL2
+[0m20:10:40.399070 [info ] [MainThread]:   priority: None
+[0m20:10:40.399070 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m20:10:40.400038 [info ] [MainThread]:   reservation: None
+[0m20:10:40.401037 [info ] [MainThread]:   impersonate_service_account: None
+[0m20:10:40.401037 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m20:10:40.402037 [info ] [MainThread]:   job_retries: 1
+[0m20:10:40.402037 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m20:10:40.403048 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m20:10:40.404042 [info ] [MainThread]:   job_link_info_level_log: False
+[0m20:10:40.405078 [info ] [MainThread]:   timeout_seconds: 300
+[0m20:10:40.405078 [info ] [MainThread]:   client_id: None
+[0m20:10:40.406078 [info ] [MainThread]:   token_uri: None
+[0m20:10:40.406078 [info ] [MainThread]:   compute_region: None
+[0m20:10:40.407047 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m20:10:40.407047 [info ] [MainThread]:   gcs_bucket: None
+[0m20:10:40.408044 [info ] [MainThread]:   dataproc_batch: None
+[0m20:10:40.409077 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m20:10:40.910304 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:10:40.911304 [debug] [MainThread]: On debug: select 1 as id
+[0m20:10:40.912303 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:10:45.041977 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:79a8b97f-ab77-4ea6-b37c-28fcc5f8d4a3&page=queryresults
+[0m20:10:45.254228 [debug] [MainThread]: SQL status: OK in 0.211 seconds
+[0m20:10:50.143203 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:10:50.144209 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:10:50.146204 [debug] [MainThread]: Command `dbt debug` succeeded at 20:10:50.146204 after 16.33 seconds
+[0m20:10:50.146204 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:10:50.147202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D06CA7F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D081084F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1B7BDA50>]}
+[0m20:10:50.148205 [debug] [MainThread]: Flushing usage events
+[0m20:10:50.685627 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:57.731216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A2FEC070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A56D6050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A56D5E70>]}
+
+
+============================== 20:10:57.736730 | 0e7f1613-a542-4b54-b3f6-91a445e31c6d ==============================
+[0m20:10:57.736730 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:10:57.737732 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m20:10:59.567547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B7903CA0>]}
+[0m20:10:59.649145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B64DEB90>]}
+[0m20:10:59.651147 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m20:11:00.145674 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m20:11:00.146672 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:11:00.148676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B78B6740>]}
+[0m20:11:03.512235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B811D7E0>]}
+[0m20:11:03.643405 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m20:11:03.648732 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m20:11:03.703457 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m20:11:03.724227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B81E0580>]}
+[0m20:11:03.725228 [info ] [MainThread]: Found 1 model, 1 source, 561 macros
+[0m20:11:03.726232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B8293C40>]}
+[0m20:11:03.727228 [info ] [MainThread]: 
+[0m20:11:03.728578 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:11:03.729577 [info ] [MainThread]: 
+[0m20:11:03.731084 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:11:03.733130 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509'
+[0m20:11:03.734129 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:11:05.292062 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m20:11:05.293125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:11:05.789150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B819B460>]}
+[0m20:11:05.790270 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:11:05.800065 [debug] [Thread-1 (]: Began running node model.smog_dbt.mart_air_quality_report
+[0m20:11:05.801157 [info ] [Thread-1 (]: 1 of 1 START sql table model smog_warehouse.mart_air_quality_report ............ [RUN]
+[0m20:11:05.802165 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.smog_dbt.mart_air_quality_report'
+[0m20:11:05.803167 [debug] [Thread-1 (]: Began compiling node model.smog_dbt.mart_air_quality_report
+[0m20:11:05.815676 [debug] [Thread-1 (]: Writing injected SQL for node "model.smog_dbt.mart_air_quality_report"
+[0m20:11:05.818675 [debug] [Thread-1 (]: Began executing node model.smog_dbt.mart_air_quality_report
+[0m20:11:05.865428 [debug] [Thread-1 (]: Writing runtime sql for node "model.smog_dbt.mart_air_quality_report"
+[0m20:11:05.867435 [debug] [Thread-1 (]: On model.smog_dbt.mart_air_quality_report: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "model.smog_dbt.mart_air_quality_report"} */
+
+  
+    
+
+    create or replace table `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with source as (
+    select * from `de-project-001-503509`.`smog_warehouse`.`krakow_air_quality`
+),
+
+transformed as (
+    select
+        timestamp(timestamp) as measurement_timestamp,
+        format_timestamp('%Y-%m-%d %H:%M', timestamp(timestamp)) as formatted_time,
+        city,
+        pm10,
+        pm2_5,
+        european_aqi,
+        case 
+            when european_aqi <= 20 then '🟢 Bardzo dobra'
+            when european_aqi <= 40 then '🟢 Dobra'
+            when european_aqi <= 60 then '🟡 Umiarkowana'
+            when european_aqi <= 80 then '🟠 Zła'
+            else '🔴 Bardzo zła'
+        end as air_quality_status,
+        source_file,
+        current_timestamp() as dbt_updated_at
+    from source
+)
+
+select * from transformed
+order by measurement_timestamp desc
+    );
+  
+[0m20:11:05.868435 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:11:06.966309 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:19cf90c7-10e7-4e79-9519-38cefb233ce3&page=queryresults
+[0m20:11:07.878240 [debug] [Thread-1 (]: SQL status: OK in 0.908 seconds
+[0m20:11:08.169454 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0e7f1613-a542-4b54-b3f6-91a445e31c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B681E680>]}
+[0m20:11:08.170583 [info ] [Thread-1 (]: 1 of 1 OK created sql table model smog_warehouse.mart_air_quality_report ....... [[32mCREATE TABLE (6.0 rows, 528.0 Bytes processed)[0m in 2.36s]
+[0m20:11:08.171820 [debug] [Thread-1 (]: Finished running node model.smog_dbt.mart_air_quality_report
+[0m20:11:08.173599 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:11:08.174641 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:11:08.175609 [debug] [MainThread]: Connection 'list_de-project-001-503509' was properly closed.
+[0m20:11:08.175609 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m20:11:08.176610 [debug] [MainThread]: Connection 'model.smog_dbt.mart_air_quality_report' was properly closed.
+[0m20:11:08.176610 [info ] [MainThread]: 
+[0m20:11:08.177610 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.45 seconds (4.45s).
+[0m20:11:08.178641 [debug] [MainThread]: Command end result
+[0m20:11:08.227264 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m20:11:08.230264 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m20:11:08.234783 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m20:11:08.243795 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m20:11:08.243795 [info ] [MainThread]: 
+[0m20:11:08.244795 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:11:08.245794 [info ] [MainThread]: 
+[0m20:11:08.246796 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m20:11:08.247825 [debug] [MainThread]: Command `dbt run` succeeded at 20:11:08.247825 after 10.66 seconds
+[0m20:11:08.248790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A2FEC070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A2DDA950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B8290190>]}
+[0m20:11:08.248790 [debug] [MainThread]: Flushing usage events
+[0m20:11:08.716068 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:55.871148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002138B918040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002138CEF7760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002138BC2F5E0>]}
+
+
+============================== 18:46:55.887409 | 526e28d3-6f98-43eb-a399-4eed99f8ac01 ==============================
+[0m18:46:55.887409 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:46:55.889354 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m18:47:04.210041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002138BC2F5E0>]}
+[0m18:47:04.298720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139E19D510>]}
+[0m18:47:04.299721 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:47:04.958996 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m18:47:06.934794 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:47:06.935776 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:47:06.935776 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:47:06.947855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139F794E50>]}
+[0m18:47:07.134185 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:47:07.154245 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:47:07.216295 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:47:07.325607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139F8D42E0>]}
+[0m18:47:07.327604 [info ] [MainThread]: Found 1 model, 1 source, 561 macros
+[0m18:47:07.328606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002138A09C0A0>]}
+[0m18:47:07.331153 [info ] [MainThread]: 
+[0m18:47:07.332117 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:47:07.333118 [info ] [MainThread]: 
+[0m18:47:07.334118 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:47:07.336318 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509'
+[0m18:47:07.337314 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:11.555223 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m18:47:11.556219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:12.060114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139F471AE0>]}
+[0m18:47:12.061115 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:12.090610 [debug] [Thread-1 (]: Began running node model.smog_dbt.mart_air_quality_report
+[0m18:47:12.091584 [info ] [Thread-1 (]: 1 of 1 START sql table model smog_warehouse.mart_air_quality_report ............ [RUN]
+[0m18:47:12.094087 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.smog_dbt.mart_air_quality_report'
+[0m18:47:12.095094 [debug] [Thread-1 (]: Began compiling node model.smog_dbt.mart_air_quality_report
+[0m18:47:12.115897 [debug] [Thread-1 (]: Writing injected SQL for node "model.smog_dbt.mart_air_quality_report"
+[0m18:47:12.124148 [debug] [Thread-1 (]: Began executing node model.smog_dbt.mart_air_quality_report
+[0m18:47:12.139431 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:47:12.507011 [debug] [Thread-1 (]: Writing runtime sql for node "model.smog_dbt.mart_air_quality_report"
+[0m18:47:12.509011 [debug] [Thread-1 (]: On model.smog_dbt.mart_air_quality_report: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "model.smog_dbt.mart_air_quality_report"} */
+
+  
+    
+
+    create or replace table `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with source as (
+    select * from `de-project-001-503509`.`smog_warehouse`.`krakow_air_quality`
+),
+
+transformed as (
+    select
+        timestamp(timestamp) as measurement_timestamp,
+        format_timestamp('%Y-%m-%d %H:%M', timestamp(timestamp)) as formatted_time,
+        city,
+        pm10,
+        pm2_5,
+        european_aqi,
+        case 
+            when european_aqi <= 20 then '🟢 Bardzo dobra'
+            when european_aqi <= 40 then '🟢 Dobra'
+            when european_aqi <= 60 then '🟡 Umiarkowana'
+            when european_aqi <= 80 then '🟠 Zła'
+            else '🔴 Bardzo zła'
+        end as air_quality_status,
+        source_file,
+        current_timestamp() as dbt_updated_at
+    from source
+)
+
+select * from transformed
+order by measurement_timestamp desc
+    );
+  
+[0m18:47:13.191990 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:0edee96d-01d0-40d0-8ad9-a38abe6344c2&page=queryresults
+[0m18:47:14.201934 [debug] [Thread-1 (]: SQL status: OK in 1.010 seconds
+[0m18:47:19.736674 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '526e28d3-6f98-43eb-a399-4eed99f8ac01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139F3983D0>]}
+[0m18:47:19.737644 [info ] [Thread-1 (]: 1 of 1 OK created sql table model smog_warehouse.mart_air_quality_report ....... [[32mCREATE TABLE (10.0 rows, 880.0 Bytes processed)[0m in 7.64s]
+[0m18:47:19.742164 [debug] [Thread-1 (]: Finished running node model.smog_dbt.mart_air_quality_report
+[0m18:47:19.749686 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:47:19.751722 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:47:19.751722 [debug] [MainThread]: Connection 'list_de-project-001-503509' was properly closed.
+[0m18:47:19.753265 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m18:47:19.754794 [debug] [MainThread]: Connection 'model.smog_dbt.mart_air_quality_report' was properly closed.
+[0m18:47:19.755795 [info ] [MainThread]: 
+[0m18:47:19.756799 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 12.42 seconds (12.42s).
+[0m18:47:19.757794 [debug] [MainThread]: Command end result
+[0m18:47:19.821494 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:47:19.827967 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:47:19.834619 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:47:19.850792 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m18:47:19.851792 [info ] [MainThread]: 
+[0m18:47:19.852792 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:47:19.854303 [info ] [MainThread]: 
+[0m18:47:19.855314 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m18:47:19.858314 [debug] [MainThread]: Command `dbt run` succeeded at 18:47:19.857315 after 24.22 seconds
+[0m18:47:19.858314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002138B918040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139E1BF550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002139F3E20E0>]}
+[0m18:47:19.860832 [debug] [MainThread]: Flushing usage events
+[0m18:47:20.418180 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:20:11.341141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001398441C070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013985B36050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013985B35E70>]}
+
+
+============================== 18:20:11.349876 | 05a4319c-428b-41e2-85fe-72c11f042f2a ==============================
+[0m18:20:11.349876 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:20:11.350850 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'log_path': 'C:\\Users\\adpaw\\projects\\de\\simple\\dbt_smog\\logs'}
+[0m18:20:19.325230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013997D73CA0>]}
+[0m18:20:19.412399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001399694EB90>]}
+[0m18:20:19.414402 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:20:20.143808 [debug] [MainThread]: checksum: 7e00d9716c7cdd5c66c9277a89cb3c2760cb6dd1e37c2e2ee6d31ec79b1c28aa, vars: {}, profile: smog_dbt, target: dev, version: 1.12.0
+[0m18:20:22.121565 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:20:22.122601 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:20:22.122601 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:20:22.134222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001399825CE80>]}
+[0m18:20:22.332329 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:20:22.358939 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:20:22.432810 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:20:22.537833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139983A8160>]}
+[0m18:20:22.538841 [info ] [MainThread]: Found 1 model, 1 source, 561 macros
+[0m18:20:22.539841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013982B8C0A0>]}
+[0m18:20:22.541877 [info ] [MainThread]: 
+[0m18:20:22.542875 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:20:22.543843 [info ] [MainThread]: 
+[0m18:20:22.544843 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:20:22.546841 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509'
+[0m18:20:22.547841 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:20:25.021516 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_de-project-001-503509_smog_warehouse'
+[0m18:20:25.022521 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:20:25.615350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013997F45B40>]}
+[0m18:20:25.616349 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:20:25.628259 [debug] [Thread-1 (]: Began running node model.smog_dbt.mart_air_quality_report
+[0m18:20:25.629293 [info ] [Thread-1 (]: 1 of 1 START sql table model smog_warehouse.mart_air_quality_report ............ [RUN]
+[0m18:20:25.630012 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.smog_dbt.mart_air_quality_report'
+[0m18:20:25.631019 [debug] [Thread-1 (]: Began compiling node model.smog_dbt.mart_air_quality_report
+[0m18:20:25.644222 [debug] [Thread-1 (]: Writing injected SQL for node "model.smog_dbt.mart_air_quality_report"
+[0m18:20:25.648345 [debug] [Thread-1 (]: Began executing node model.smog_dbt.mart_air_quality_report
+[0m18:20:25.663357 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:20:26.021247 [debug] [Thread-1 (]: Writing runtime sql for node "model.smog_dbt.mart_air_quality_report"
+[0m18:20:26.023258 [debug] [Thread-1 (]: On model.smog_dbt.mart_air_quality_report: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "smog_dbt", "target_name": "dev", "node_id": "model.smog_dbt.mart_air_quality_report"} */
+
+  
+    
+
+    create or replace table `de-project-001-503509`.`smog_warehouse`.`mart_air_quality_report`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with source as (
+    select * from `de-project-001-503509`.`smog_warehouse`.`krakow_air_quality`
+),
+
+transformed as (
+    select
+        timestamp(timestamp) as measurement_timestamp,
+        format_timestamp('%Y-%m-%d %H:%M', timestamp(timestamp)) as formatted_time,
+        city,
+        pm10,
+        pm2_5,
+        european_aqi,
+        case 
+            when european_aqi <= 20 then '🟢 Bardzo dobra'
+            when european_aqi <= 40 then '🟢 Dobra'
+            when european_aqi <= 60 then '🟡 Umiarkowana'
+            when european_aqi <= 80 then '🟠 Zła'
+            else '🔴 Bardzo zła'
+        end as air_quality_status,
+        source_file,
+        current_timestamp() as dbt_updated_at
+    from source
+)
+
+select * from transformed
+order by measurement_timestamp desc
+    );
+  
+[0m18:20:26.368974 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=de-project-001-503509&j=bq:europe-central2:f095963c-c4b1-426e-a765-5d45ae71053b&page=queryresults
+[0m18:20:27.335579 [debug] [Thread-1 (]: SQL status: OK in 0.965 seconds
+[0m18:20:30.931184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '05a4319c-428b-41e2-85fe-72c11f042f2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013996C8E680>]}
+[0m18:20:30.932181 [info ] [Thread-1 (]: 1 of 1 OK created sql table model smog_warehouse.mart_air_quality_report ....... [[32mCREATE TABLE (13.0 rows, 1.1 KiB processed)[0m in 5.30s]
+[0m18:20:30.934182 [debug] [Thread-1 (]: Finished running node model.smog_dbt.mart_air_quality_report
+[0m18:20:30.935521 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:20:30.937604 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:20:30.937604 [debug] [MainThread]: Connection 'list_de-project-001-503509' was properly closed.
+[0m18:20:30.938569 [debug] [MainThread]: Connection 'list_de-project-001-503509_smog_warehouse' was properly closed.
+[0m18:20:30.938569 [debug] [MainThread]: Connection 'model.smog_dbt.mart_air_quality_report' was properly closed.
+[0m18:20:30.939603 [info ] [MainThread]: 
+[0m18:20:30.940191 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 8.40 seconds (8.40s).
+[0m18:20:30.941197 [debug] [MainThread]: Command end result
+[0m18:20:30.989442 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\manifest.json
+[0m18:20:30.994440 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\adpaw\projects\de\simple\dbt_smog\target\semantic_manifest.json
+[0m18:20:30.998945 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\adpaw\projects\de\simple\dbt_smog\target\osi_document.json
+[0m18:20:31.008063 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\adpaw\projects\de\simple\dbt_smog\target\run_results.json
+[0m18:20:31.009065 [info ] [MainThread]: 
+[0m18:20:31.010883 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:20:31.011883 [info ] [MainThread]: 
+[0m18:20:31.012516 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m18:20:31.013232 [debug] [MainThread]: Command `dbt run` succeeded at 18:20:31.013232 after 19.88 seconds
+[0m18:20:31.014239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001398441C070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013984EA3070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013997EDF520>]}
+[0m18:20:31.015238 [debug] [MainThread]: Flushing usage events
+[0m18:20:31.584651 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: de-project-001-503509
+    schema: smog_warehouse
+    tables:
+      - name: krakow_air_quality
+        description: "Surowe pomiary smogu z Krakowa zasilane przez pipeline Airflow (Python)"

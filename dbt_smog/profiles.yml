@@ -1,0 +1,11 @@
+smog_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: de-project-001-503509
+      dataset: smog_warehouse
+      threads: 4
+      timeout_seconds: 300
+      location: EUROPE-CENTRAL2
