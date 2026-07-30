@@ -43,3 +43,6 @@ graph TD
 <img width="1910" height="798" alt="obraz" src="https://github.com/user-attachments/assets/c2fe23fc-c589-4582-803d-d7ba28dd4a29" />
 
 
+https://datastudio.google.com/reporting/6198380d-531c-417c-a8f5-66cae642bbdc
+
+
